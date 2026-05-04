@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <title>fabrica de queques-pedidos online</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>fabrica de queques</h1>
+      <p>Pedidos online</p>
+    </header>
+
+    <main>
+      <form>
+        <h2>Tu pedido</h2>
+
+        <section>
+          <h3>Tus datos</h3>
+
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" name="telefono">
+        </section>
+
+        <section>
+          <h3>Tamaño</h3>
+
+          <input type="radio" id="chica" name="tamanio" value="chica">
+          <label for="chica">Chica (4 porciones)</label>
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.1G4nZFqW3kkeMa41f3opPQHaHa%3Fpid%3DApi&f=1&ipt=bc85d6f915514fd5dd886afa802697e3647b3ddb1094bc445e2f94c57ebad342&ipo=images" alt="mi pequeño queque" class="imagenesqueques">
+          <input type="radio" id="mediana" name="tamanio" value="mediana">
+          <label for="mediana">Mediana (6 porciones)</label>
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.18Zo9cgyq3nBS5rFQ-wUlAHaGF%3Fpid%3DApi&f=1&ipt=95fae211e5e268a6b722bf818e9690630a7326f1bcf93312b7a61af7622e38a8&ipo=images" alt="mi mediano queque" class="imagenesqueques">
+          
+          <input type="radio" id="grande" name="tamanio" value="grande">
+          <label for="grande">Grande (8 porciones)</label>
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frecetaland.com%2Fwp-content%2Fuploads%2F2020%2F03%2F10.-queque-super-esponjoso.jpg&f=1&nofb=1&ipt=2d8366b37346fc43fa005b284d8d5adde4a9cf86bc1b98a5a413a4c6ddd942bf" alt="mi grande quque" class="imagenesqueques">
+        </section>
+
+        <section>
+          <h3>Tipo de masa</h3>
+
+          <label for="masa">Elegí tu masa</label>
+          <select id="masa" name="masa" required>
+            <option value="">-- Elegí una --</option>
+            <option value="clasico queque">Clásico queque</option>
+            <option value="queque madre">especial de la casa</option> 
+            <option value="multisabor">queque de chocolate</option>
+          </select>
+        </section>
+
+        <section>
+          <h3>Ingredientes extra</h3>
+          
+
+          <input type="checkbox" id="marmolado" name="ingrediente_marmolado" value="marmolado">
+          <label for="marmolado">marmolado <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fes.cravingsjournal.com%2Fwp-content%2Fuploads%2F2020%2F04%2Fqueque-marmoleado-cebra-1.jpg&f=1&nofb=1&ipt=b26e2e5d495c1170f0de85682275bd0a30545fdb608a06a2fe7255ddb0482439" class="imagenesqueques"></label>
+
+          <input type="checkbox" id="arándanos y limón" name="ingrediente_arándanos y limón" value="arándanos y limón">
+          <label for="arándanos y limón">arándanos y limón <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fed%2F0d%2Fa2%2Fed0da259fd4831454b6875a03302ecfa.jpg&f=1&nofb=1&ipt=356c1abacd3d3ecd9798541feb284964878b431951d80174371992b96fb7b556" class="imagenesqueques"></label>
+
+          <input type="checkbox" id="bañado" name="ingrediente_bañado" value="bañado">
+          <label for="bañado">bañado de chocolate <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-Un53zkiTjqk%2FUkCs3KDLiZI%2FAAAAAAAAABU%2Fb10l_tyl2j0%2Fs1600%2FChocolate%2Bcake_3.jpg&f=1&nofb=1&ipt=17f53ccc2bb0ec674ac83411932dbb3424be1711b19d56c0eaa63ed142c6ec40" class="imagenesqueques" ></label>
+
+          <input type="checkbox" id="relleno" name="relleno" value="relleno">
+          <label for="relleno">relleno de duranzo <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frecetaland.com%2Fwp-content%2Fuploads%2F2020%2F03%2F34.-queque-de-durazno-1bD.jpg&f=1&nofb=1&ipt=38276fb654e7fc2a9b209d8e28432c73cc1635936b28de6b1d5bc9415409156b"class="imagenesqueques" ></label>
+
+         
+        </section>
+
+        <section>
+          <h3>Cantidad</h3>
+
+          <label for="cantidad">¿Cuántos queques?</label>
+          <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
+        </section>
+
+        <section>
+          <h3>Comentarios</h3>
+
+          <label for="comentarios">¿Algo más que quieras avisarnos?</label>
+          <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        </section>
+
+        <button type="submit">Hacer pedido</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>fabrica de queques — lugano 1 y 2, Buenos Aires</p>
+    </footer>
+  </body>
+</html>
